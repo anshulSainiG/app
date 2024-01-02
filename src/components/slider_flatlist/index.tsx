@@ -44,6 +44,15 @@ const SliderFlatlist: React.FC = () => {
     </View>
   );
 
+  const onMomentumScrollEnd = (event: any) => {
+    const x = event.nativeEvent.contentOffset.x;
+    const calculatedIndex = Math.round(x / deviceWidth);
+
+    if (calculatedIndex !== index) {
+      setIndex(calculatedIndex);
+    }
+  };
+
   return (
     <View>
       <FlatList
@@ -52,11 +61,7 @@ const SliderFlatlist: React.FC = () => {
         data={Dashboard}
         horizontal
         pagingEnabled
-        onMomentumScrollEnd={event => {
-          const x = event.nativeEvent.contentOffset.x;
-          const calculatedIndex = Math.round(x / deviceWidth);
-          setIndex(calculatedIndex);
-        }}
+        onMomentumScrollEnd={onMomentumScrollEnd}
         keyExtractor={item => item.id}
         renderItem={renderItem}
       />

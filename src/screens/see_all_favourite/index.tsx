@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  FlatList,
-  Image,
-  StyleSheet,
-} from 'react-native';
-import AntDesign from 'react-native-vector-icons/AntDesign';
+import {View, Text, FlatList, Image, StyleSheet} from 'react-native';
 import {Favourite_1} from '../../assests/constants/data/data1';
 import {
   deviceHeight,

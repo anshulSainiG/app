@@ -82,7 +82,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   outerListView: {
-    width: deviceWidth / 2,
+    width: deviceWidth / 2 - 40,
     height: deviceHeight / 2 - 200,
     marginTop: 10,
     marginLeft: 8,

@@ -76,9 +76,19 @@ const styles = StyleSheet.create({
   },
   innerView: {
     backgroundColor: 'black',
-    width: 200,
+    width: 178,
     height: 50,
     opacity: 0.7,
+    marginLeft: 4,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    shadowColor: '#000000',
+    shadowOpacity: 0.8,
+    shadowRadius: 2,
+    shadowOffset: {
+      height: 1,
+      width: 1,
+    },
   },
   circleView: {
     backgroundColor: 'white',
@@ -101,6 +111,12 @@ const styles = StyleSheet.create({
   outerItemView: {
     paddingBottom: 10,
     marginLeft: 5,
+    borderLeftWidth: 1,
+    borderEndWidth: 1,
+    borderBottomWidth: 1,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+    borderColor: 'white',
   },
   itemName: {
     fontSize: 20,
@@ -117,6 +133,7 @@ const styles = StyleSheet.create({
     color: 'blue',
     textAlign: 'center',
     fontWeight: 'bold',
+    marginLeft:2,
   },
   itemPara: {
     fontSize: 19,
