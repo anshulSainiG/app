@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
   },
   image: {
     borderRadius: 8,
-    height: deviceHeight / 2 - 200,
+    height: deviceHeight / 2 - 160,
     width: deviceWidth - 20,
   },
   itemView: {
